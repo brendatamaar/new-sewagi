@@ -1,2 +1,3 @@
 // global
-//export { default as ThemeSwitcher } from './theme-switcher/ThemeSwitcher.vue';
+export { default as Button } from './ui/Button.vue';
+export { default as Card } from './ui/Card.vue';

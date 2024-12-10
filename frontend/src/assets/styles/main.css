@@ -1,58 +1,102 @@
+
+/* Import Poppins and PT Mono fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Poppins:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --color-primary: #3b82f6;
-    --color-primary-light-4: #e6f4ff;
-    --color-danger: #f56c6c;
+    --color-primary: #6DC7BE;
+    --color-primary-2: #F0B492;
+    --color-primary-3: #013240;
 
-    --text-color: #334155;
-    --background-color: #f1f5f9;
+    --color-secondary: #1D5060;
+    --color-secondary-2: #F7F9FA;
+    --color-secondary-3: #FFE98A;
+    --color-secondary-4: #D1BCF4;
+    --color-secondary-5: #FFD1B6;
+    --color-secondary-6: #424242;
+    --color-secondary-7: #8A8989;
+    --color-secondary-8: #BDBDBD;
+    --color-secondary-9: #DCDBDB;
+    --color-secondary-10: #E9E9E9;
 
-    --menu-active-color: var(--color-primary);
-    --menu-active-background: var(--color-primary-light-4);
-    --menu-hover-color: var(--text-color);
-    --menu-hover-background: var(--background-color);
-  }
-
-  :root[class~='dark'] {
-    --color-primary: #3b82f6;
-    --color-primary-light-4: #e6f4ff;
-    --color-danger: #f56c6c;
-
-    --text-color: #334155;
-    --background-color: #f1f5f9;
-
-    --menu-active-color: var(--color-primary);
-    --menu-active-background: var(--color-primary-light-4);
-    --menu-hover-color: var(--text-color);
-    --menu-hover-background: var(--background-color);
+    --font-sans-serif: 'Poppins', sans-serif;
+    --font-monospace: 'PT Mono', monospace;
   }
 }
 
 body {
-  min-height: 100dvh;
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-family: var(--font-sans-serif);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.header-1 {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.header-2 {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.header-3 {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.header-4 {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.text-default {
+  font-family: var(--font-sans-serif);
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.text-form {
+  font-family: var(--font-sans-serif);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-subtitle {
+  font-family: var(--font-sans-serif);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.text-button {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-banner {
+  font-family: var(--font-sans-serif);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.text-tag {
+  font-family: var(--font-monospace);
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
 }
