@@ -15,13 +15,16 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    'quotes': ['error', 'single'],
-    'semi': [
-      'error',
-      'always'
-    ],
+    'indent': 'off',
+    'sort-imports': ['error', { ignoreDeclarationSort: true }],
     'vue/multi-word-component-names': 'off',
     'vue/require-default-prop': 'off',
     '@typescript-eslint/no-unused-vars': 'warn'
-  }
+  },
+  settings: {
+    'import/resolver': {
+      alias: { map: [['@', './src']] },
+      node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    },
+  },
 };

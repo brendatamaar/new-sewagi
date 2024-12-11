@@ -13,6 +13,14 @@ import Aura from '@primevue/themes/aura';
 import 'primeicons/primeicons.css';
 import PrimeVue from 'primevue/config';
 
+import { dom, library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+library.add(fas, far, fab)
+dom.watch();
+
 const vueQueryPluginOptions: VueQueryPluginOptions = {
   queryClientConfig: {
     defaultOptions: {
@@ -35,4 +43,5 @@ app.use(PrimeVue, {
     preset: Aura
   }
 });
+app.component("font-awesome-icon", FontAwesomeIcon)
 app.mount('#app');
