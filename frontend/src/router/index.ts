@@ -19,6 +19,11 @@ const routes = [
     path: '/detail',
     name: 'detail',
     component: () => import('@/views/DetailProperty.vue'),
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: () => import('@/views/ListProperty.vue'),
   }
 ];
 
