@@ -25,14 +25,15 @@
 		"class-variance-authority": "^0.7.0",
 		"pinia": "^2.2.4",
 		"vue": "^3.5.12",
-		"vue-fontawesome": "^0.0.2",
 		"vue-i18n": "^9.14.1",
 		"vue-router": "^4.4.5",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@types/bootstrap": "^5.2.10",
+		"@types/jquery": "^3.5.32",
 		"@types/node": "^20.16.14",
+		"@types/select2": "^4.0.63",
 		"@vitejs/plugin-vue": "^5.2.1",
 		"@vitejs/plugin-vue-jsx": "^4.1.1",
 		"eslint": "^8.57.1",

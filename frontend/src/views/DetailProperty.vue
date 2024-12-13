@@ -169,27 +169,27 @@
 											<h4 class="ml-30 mt-10">Entire House</h4>
 											<div class="row text-color-gray-1 mb-4">
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fas fa-globe"></i>
 													<div>Internet</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-parking"></i>
 													<div>Parkir pribadi</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-tv"></i>
 													<div>TV kabel</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fas fa-broom"></i>
 													<div>Layanan kebersihan</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="far fa-building"></i>
 													<div>Biaya layanan warga</div>
 												</div>
@@ -199,17 +199,17 @@
 											<h4 class="ml-30 mt-10">Co-Living</h4>
 											<div class="row text-color-gray-1 mb-4">
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fas fa-globe"></i>
 													<div>Internet</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-tv"></i>
 													<div>TV kabel</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fas fa-broom"></i>
 													<div>Layanan kebersihan</div>
 												</div>
@@ -233,37 +233,37 @@
 										<div class="col-md-12">
 											<div class="row text-color-gray-1">
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-tv"></i>
 													<div>Television</div>
 												</div>
 
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-wifi"></i>
 													<div>Wi-fi</div>
 												</div>
 
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-bath"></i>
 													<div>Bathtub</div>
 												</div>
 
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-car"></i>
 													<div>Free Parking</div>
 												</div>
 
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-briefcase"></i>
 													<div>Workspace</div>
 												</div>
 
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-box"></i>
 													<div>Deposit box</div>
 												</div>
@@ -287,22 +287,22 @@
 										<div class="col-md-12">
 											<div class="row text-color-gray-1 mb-4">
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<img src="https://img.icons8.com/wired/26/000000/elevator.png">
 													<div>Elevator</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-user-secret"></i>
 													<div>24 hours Security</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-car"></i>
 													<div>Parking Space</div>
 												</div>
 												<div class="feature-grid">
-													<!-- <img src="https://sewagi-web.inspira.web.id/img/001-home.svg" class="mr-2" width="24px"> -->
+													<!-- <img src="/img/001-home.svg" class="mr-2" width="24px"> -->
 													<i class="fa fa-shopping-bag"></i>
 													<div>Shopping Area</div>
 												</div>
@@ -777,12 +777,76 @@
 						</ul>
 					</nav>
 					<div class="row" id="map-list">
-						<div class="col-sm-4 order-sm-0 order-1 map-marker-list">
-							<div class="tab-content pb-5">
+						<div class="col-sm-5 order-sm-0 order-1 map-marker-list">
+							<div class="tab-pane active show" role="tabpanel" id="neighborhood-tab-0">
+								<div class="tab-content pb-5">
+									<div class="marker-item mb-3">
+										<div class="marker-icon mr-10">
+											<img src="/img/marker.svg">
+											<div class="marker-num">1</div>
+										</div>
+										<div class="ml-2 my-5 my-5 marker-info">
+											<div class="marker-title">Lehrman School</div>
+											<div class="marker-distance">200 km</div>
+										</div>
+									</div>
+									<div class="marker-item mb-3">
+										<div class="marker-icon mr-10">
+											<img src="/img/marker.svg">
+											<div class="marker-num">2</div>
+										</div>
+										<div class="ml-2 my-5 my-5 marker-info">
+											<div class="marker-title">Lucas Elementary School</div>
+											<div class="marker-distance">1 km</div>
+										</div>
+									</div>
+									<div class="marker-item mb-3">
+										<div class="marker-icon mr-10">
+											<img src="/img/marker.svg">
+											<div class="marker-num">3</div>
+										</div>
+										<div class="ml-2 my-5 marker-info">
+											<div class="marker-title">Bina Bangsa School</div>
+											<div class="marker-distance">2 km</div>
+										</div>
+									</div>
+									<div class="marker-item mb-3">
+										<div class="marker-icon mr-10">
+											<img src="/img/marker.svg">
+											<div class="marker-num">1</div>
+										</div>
+										<div class="ml-2 my-5 my-5 marker-info">
+											<div class="marker-title">Bina Bangsa School</div>
+											<div class="marker-distance">2 km</div>
+										</div>
+									</div>
+									<div class="marker-item mb-3">
+										<div class="marker-icon mr-10">
+											<img src="/img/marker.svg">
+											<div class="marker-num">2</div>
+										</div>
+										<div class="ml-2 my-5 my-5 marker-info">
+											<div class="marker-title">IPEKA International School</div>
+											<div class="marker-distance">2 km</div>
+										</div>
+									</div>
+									<div class="marker-item mb-3">
+										<div class="marker-icon mr-10">
+											<img src="/img/marker.svg">
+											<div class="marker-num">3</div>
+										</div>
+										<div class="ml-2 my-5 marker-info">
+											<div class="marker-title">St. Joseph School</div>
+											<div class="marker-distance">2 km</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-sm-7 map mb-5">
-							<div id="neighborhood-map" style="height:300px;"></div>
+							<div class="map-container">
+								<div class="map-placeholder"></div>
+							</div>
 							<button class="marker-full-btn btn btn-primary">View full map</button>
 						</div>
 					</div>
@@ -797,7 +861,7 @@
 			<div class="container prop-content">
 				<div class="row">
 					<div class="col-12">
-						<h3 class="font-size-34 font-weight-bold mb-50 pt-20">Similar listings</h3>
+						<h3 class="font-size-34 font-weight-bold mb-50 pt-20 pb-20">Similar listings</h3>
 					</div>
 				</div>
 			</div>
@@ -805,25 +869,10 @@
 				<div class="row">
 					<div class="col-12 slider-viewed-listings">
 						<div class="owl-carousel main-listings-prop owl-loaded owl-drag">
-							<!-- start: property item -->
-
-							<!-- end: property item -->
-							<!-- start: property item -->
-
-							<!-- end: property item -->
-							<!-- start: property item -->
-
-							<!-- end: property item -->
-							<!-- start: property item -->
-
-							<!-- end: property item -->
-							<!-- start: property item -->
-
-							<!-- end: property item -->
 							<div class="owl-stage-outer">
 								<div class="owl-stage"
-									style="transform: translate3d(0px, 0px, 0px); transition: all; width: 954px;">
-									<div class="owl-item active" style="width: 298px; margin-right: 20px;">
+									style="transform: translate3d(0px, 0px, 0px); transition: all;">
+									<div class="owl-item active" style="margin-right: 20px;">
 										<div class="col-12 property-wrapper">
 											<div class="property-item">
 												<div id="" class="pp-images position-relative">
@@ -894,7 +943,7 @@
 										</div>
 									</div>
 
-									<div class="owl-item active" style="width: 298px; margin-right: 20px;">
+									<div class="owl-item active" style="margin-right: 20px;">
 										<div class="col-12 property-wrapper">
 											<div class="property-item">
 												<div id="" class="pp-images position-relative">
@@ -965,7 +1014,7 @@
 										</div>
 									</div>
 
-									<div class="owl-item active" style="width: 298px; margin-right: 20px;">
+									<div class="owl-item active" style="margin-right: 20px;">
 										<div class="col-12 property-wrapper">
 											<div class="property-item">
 												<div id="" class="pp-images position-relative">
@@ -1209,4 +1258,19 @@ import { Button, HomeSearchBar } from '@/components'
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.map-container {
+	width: 100%;
+	height: 400px;
+	margin: 20px auto;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.map-placeholder {
+	width: 100%;
+	height: 100%;
+	background: url('https://via.placeholder.com/800x400?text=Map+Placeholder') center/cover no-repeat;
+}
+</style>
