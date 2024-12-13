@@ -1,7 +1,6 @@
 <template>
 	<div id="list-property">
-		<nav id="list-property-navbar"
-			class="navbar navbar-expand-lg navbar-light bg-white nav-border fixed-top py-4"
+		<nav id="list-property-navbar" class="navbar navbar-expand-lg navbar-light bg-white nav-border fixed-top py-4"
 			solid-on-scroll>
 			<div class="container" style="padding: 0px">
 				<a class="navbar-brand" href="#" data-toggle="modal" data-target="#modalConfirmation"
@@ -117,126 +116,218 @@
 					</div>
 
 					<div class="col-md-10">
-						<div class="list-property-content">
-							<form id="newPropertyData1" role="form" method="POST"
-								action="http://localhost:8000/create-property" class="form-list-property">
-								<input type="hidden" name="_token" value="jUTQCZRT3puNN5hQuWcdrh8ugb6ODyjZp1DkochD">
-								<div class="mb-5">
-									<h4 class="mb-4 required">What is the estate type?</h4>
-									<div class="row">
-										<div class="col-md-8">
-											<div class="form-group">
-												<select id="estate-type" class="select2 select2-list-property"
-													name="type">
-													<option value="">Select estate type</option>
-													<option value="apartment">Apartment</option>
-													<option value="house">House</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-4 estate-size">
-											<div class="form-group d-flex align-items-center">
-												<label class="label-special text-muted fs-12" id="estate-label"
-													for="">UNIT
-													SIZE</label>
-												<input class="form-control form-control-dashboard" id="size-input"
-													type="number" placeholder="0" name="size" value="">
-												<span class="ml-2 fs-12">m<sup>2</sup></span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="mb-5">
-									<h4 class="mb-4 required">What is the ideal living condition?</h4>
-									<p class="text-muted fs-12">You can choose more than one.</p>
-								</div>
-								<div class="row">
-									<div class="col-md-4">
-										<div class="card card-list-property">
-											<div class="card-header">
-												<img class="mb-4" src="/img/list-property-coliving.svg"
-													alt="Co-living" />
-												<h5>Co-living</h5>
-											</div>
-											<div class="card-body justify-content-between d-flex flex-column">
-												<div class="card-text">
-													<p>
-														You accept multiple renters leasing your property bedrooms and
-														sharing the common areas. This option is also useful when
-														seeking a
-														housemate for your property
-													</p>
-													<p>
-														By selecting co-living, you agree to rent your property on room
-														by
-														room basis, forgoing leasing all bedrooms at once. We call this
-														progressive leasing.
-													</p>
-													<a href="#">Connect with us for more info.</a>
-												</div>
-												<div class="btn-group-toggle" data-toggle="buttons">
-													<label
-														class="btn btn-checkbox btn-rounded btn-outline-primary mr-10 mb-10 ">
-														<input value="co-living" type="checkbox"
-															name="living_cond[]">Pilih
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="card card-list-property">
-											<div class="card-header">
-												<img class="mb-4" src="/img/list-property-entirespace.svg"
-													alt="Co-living" />
-												<h5>Entire Space</h5>
-											</div>
-											<div class="card-body justify-content-between d-flex flex-column">
-												<div class="card-text">
-													<p>Classic practice of leasing your property to one renter.</p>
-													<p>He is entitled to renting your entire property space for him or
-														herself.</p>
-												</div>
-												<div class="btn-group-toggle" data-toggle="buttons">
-													<label
-														class="btn btn-checkbox btn-rounded btn-outline-primary mr-10 mb-10 ">
-														<input value="entire-space" type="checkbox"
-															name="living_cond[]">Pilih
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="info-estate-type">
-											<p>We will publish your property as co-living friendly and as an entire
-												space.
-												Giving you more opportunities to lease faster.</p>
-											<p>In the case where your property is rented-out as a co-living, you agree
-												to
-												forfeit entire space leasing for the duration of the contracted length
-												of
-												stay.</p>
-											<a class="fs-12" href="#">Terms Of Use</a>
-										</div>
-									</div>
-								</div>
-								<input type="hidden" name="id" value="" />
-								<input value="1" type="hidden" name="step" id="step">
-							</form>
-						</div>
-						<div class="row">
-							<div class="col-md-12 border-top py-5 justify-content-between d-flex">
-								<div class="col-md-12 py-5 justify-content-end d-flex">
-									<button id="submit-list-property" class="btn btn-primary btn-next-list-property"
-										style="padding-left: 32px;padding-right: 32px;padding-top: 15px;padding-bottom: 15px;letter-spacing: 1px">
-										Next
-										<i class="fas fa-long-arrow-alt-right ml-2"></i>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <div class="list-property-content">
+                        <form id="newPropertyData10" role="form" method="POST" class="form-list-property">
+    <input type="hidden" name="_token" value="jUTQCZRT3puNN5hQuWcdrh8ugb6ODyjZp1DkochD">    <div class="row justify-content-between align-items-center mb-5">
+        <div class="col-auto">
+            <h3>Let&#039;s review your listing</h3>
+        </div>
+        <div class="col-auto">
+            <a href="#" class="btn btn-primary">VIEW LISTING MOCKUP</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-list-property">
+                <div class="card-header">
+                    <h6 class="text-muted">STEP 1</h6>
+                    <h5 style="min-height: 45px">Basic property information</h5>
+                </div>
+                <div class="card-body justify-content-between d-flex flex-column">
+                    <ul class="list-unstyled list-vertical-line">
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center active">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Property type &amp; living condition</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Bedroom &amp; bathroom</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Location</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="/create-property/2/1" class="btn btn-outline-primary">EDIT</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-list-property">
+                <div class="card-header">
+                    <h6 class="text-muted">STEP 2</h6>
+                    <h5 style="min-height: 45px">Tell us the details</h5>
+                </div>
+                <div class="card-body justify-content-between d-flex flex-column">
+                    <ul class="list-unstyled list-vertical-line">
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Description &amp; house rules</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Amenities &amp; facilities</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center active">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Photos</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center active">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Legal details</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="/create-property/2/4" class="btn btn-outline-primary">EDIT</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-list-property">
+                <div class="card-header">
+                    <h6 class="text-muted">STEP 3</h6>
+                    <h5 style="min-height: 45px">Payment preference</h5>
+                </div>
+                <div class="card-body justify-content-between d-flex flex-column">
+                    <ul class="list-unstyled list-vertical-line">
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Payment preference for co-living</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Payment preference for entire space</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="/create-property/2/8" class="btn btn-outline-primary">EDIT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 border-top py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="mb-4">Legal documents</h5>
+                    <p class="text-muted mb-4">You may skip uploading the required document for now. However, you will need to upload them when signing the lease contract with the renter. <span><a href="/create-property/2/7">Upload now.</a></span></p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-4">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Property ownership certificate</p>
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="icon-circle d-flex align-items-center ">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>
+                                <p class="mb-0">Property insurance document</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 border-top py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="mb-4">Default Payment Safe</h5>
+                    <p class="text-muted mb-4">Your Default Payment Safe insurance coverage, will only activate once you’ve successfully leased a property or bedroom via Sewagi</p>
+                    <p class="text-muted mb-4">
+                                                    View Default Payment Safe <span><a href="">premiums</a></span> and <span><a href="">benefits</a></span>.
+                                            </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="id" value="2" />
+    <input value="10" type="hidden" name="step" id="step">
+</form>
+<div class="modal fade modal-dashboard" id="modalSubmitAgree" tabindex="-1" role="dialog">
+    <div class="modal-dialog from-right" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img class="mb-5" src="../img/listing-submitted.svg" alt="">
+                <p class="mb-5">By submitting my listing to Sewagi, I understand and agree to honor the following <a href="#">General Terms of Partnership</a> and abide by the Sewagi platform <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+                <div class="button-group">
+                    <button class="btn btn-outline-primary mr-2" data-dismiss="modal">DECLINE</button>
+                    <button class="btn btn-primary" href="#modalSubmitSuccess" data-dismiss="modal" id="btnAgree" data-toggle="modal">AGREE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-dashboard" id="modalSubmitSuccess" tabindex="-1" role="dialog">
+    <div class="modal-dialog from-right" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img class="mb-5" src="../img/listing-submitted.svg" alt="">
+                <h5 class="mb-5">Yeay! Your listing has been submitted.</h5>
+                <p class="mb-5">We will review your listing to check if all is tip-top before publishing it online within one working day.</p>
+                <div class="button-group">
+                    <a class="btn btn-primary" href="#" data-dismiss="modal">GO TO DASHBOARD</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 border-top py-5 justify-content-between d-flex">
+                            <a id="link-previous" href="/create-property/2/9" class="btn btn-link btn-prev-list-property d-flex align-items-center">
+    <i class="fas fa-long-arrow-alt-left mr-2"></i>
+    Previous
+</a>
+<a id ="link-submit" class="btn btn-primary btn-next-list-property" href="#modalSubmitAgree" data-toggle="modal">
+    SUBMIT
+    <i class="fas fa-long-arrow-alt-right ml-2"></i>
+</a>
+                        </div>
+                    </div>
+                </div>
 				</div>
 			</div>
 		</div>
@@ -244,7 +335,6 @@
 </template>
 
 <script setup lang="ts">
-import { Button, HomeSearchBar } from '@/components'
 import '@/assets/styles/style.css';
 
 </script>

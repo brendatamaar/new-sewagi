@@ -1650,7 +1650,6 @@
 </template>
 
 <script setup lang="ts">
-import { Button, HomeSearchBar } from '@/components'
 
 </script>
 
