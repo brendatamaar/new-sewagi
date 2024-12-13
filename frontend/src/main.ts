@@ -6,7 +6,6 @@ import router from './router';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-// import "./assets/scss/app.scss"
 import '@/assets/styles/sewagi.css';
 
 import { dom, library } from '@fortawesome/fontawesome-svg-core';

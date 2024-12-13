@@ -1,5 +1,53 @@
 <template>
-	<nav id="main-navbar"
+	<nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white nav-border fixed-top solid-on-scroll">
+		<div class="container">
+			<a class="navbar-brand" href="" style="max-height: 36px;">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" data-scrollto="" href="/#about-us">About</a>
+					</li>
+				</ul>
+				<div class="navbar-search">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text location-icon pl-20">A</span>
+						</div>
+						<input id="navbarSearch" type="text"
+							class="form-control searchbox-value border-0 searchbox-trigger"
+							placeholder="Enter location, property name, company or education ..."
+							aria-label="Text input with segmented dropdown button" autocomplete="off">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<span class="input-group-icon d-flex align-items-center pr-15"><i
+										id="navbarRemoveLocation" class="fas fa-times"
+										style="display: none;"></i></span>
+								<button class="btn btn-target btn-grey homeCurrentLocation" type="button">
+									<i class="fanicon-target-two"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-toggle="modal" data-target="#modalLogin">Log in</a>
+					</li>
+					<li class="nav-item d-flex align-items-center">
+						<a class="nav-link primary" href="#" data-toggle="modal" data-target="#modalPropertyLister">List
+							Your Property <img src="/img/long-arrow-right.svg" class="ml-10" alt="long arrow right"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- <nav id="main-navbar"
 		class="navbar navbar-expand-lg navbar-light bg-white nav-border fixed-top navbar-transparent solid-on-scroll">
 		<div class="container">
 			<a class="navbar-brand" href="" style="max-height: 36px;">Navbar</a>
@@ -45,7 +93,7 @@
 				</ul>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
 
 	<!-- start: cookie -->
 	<!-- <div class="navbar-on-top">
@@ -61,14 +109,14 @@
 
 	<section
 		class="section-content d-flex flex-column flex-wrap justify-content-center vh-min-100 background-gradient-1">
-		<button onclick="$zopim.livechat.window.show()" class="btn-chat">
-			<i class="fas fa-comment-alt"></i>
+		<button onclick="$zopim.livechat.window.show()" class="btn-chat background-primary">
+			<font-awesome-icon icon="message" size="2xl" style="color: #ffffff;" />
 		</button>
 
 		<div id="homeSlider">
 			<div class="home-slider">
 				<div class="home-slider-item">
-					<img src="/img/background/homepage/beard-bonding-community-708440.jpg" class="d-block w-100"
+					<img src="/img/background/homepage/architecture-building-man-1527256.jpg" class="d-block w-100"
 						alt="Slider">
 				</div>
 			</div>
@@ -131,205 +179,641 @@
 				<div class="col-12 col-lg-10 offset-lg-1 slider-viewed-listings" id="property-featured">
 					<div class="owl-nav">
 						<button type="button" role="presentation" class="owl-prev">
-							<i class="fas fa-long-arrow-alt-left"></i>
+							<font-awesome-icon :icon="['fas', 'left-long']" size="2xl" style="color: #ffffff;" />
 						</button>
 						<button type="button" role="presentation" class="owl-next disabled">
-							<i class="fas fa-long-arrow-alt-right"></i>
+							<font-awesome-icon :icon="['fas', 'right-long']" size="2xl" style="color: #ffffff;" />
 						</button>
 					</div>
 
-					<div class="owl-carousel main-listings">
-						<div class="col-12 property-wrapper">
-							<div class="property-item">
-								<div id="" class="pp-images position-relative">
-									<div id="" class="pp-images position-relative">
-										<a class="pp-image-content image-wrapper-1" href="/property/1/1"
-											target="_blank">
-											<div class="image-sizing-1">
-												<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg"
-													alt="image">
+					<div class="owl-carousel main-listings owl-loaded owl-drag">
 
-											</div>
-										</a>
-										<a class="pp-image-content image-wrapper-2" href="/property/1/1"
-											target="_blank">
-											<div class="image-sizing-2">
-												<img src="https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_1280.jpg"
-													alt="image">
-												<div class="main-tag">
-													<span>#MINIMALIST</span>
+
+
+						<div class="owl-stage-outer">
+							<div class="owl-stage"
+								style="transform: translate3d(-1160px, 0px, 0px); transition: all; width: 3480px;">
+								<div class="owl-item cloned" style="width: 340px; margin-right: 240px;">
+									<div class="col-12 property-wrapper">
+										<div class="property-item">
+											<div id="" class="pp-images position-relative">
+												<div id="" class="pp-images position-relative">
+													<a class="pp-image-content image-wrapper-1" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-1">
+															<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-2" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-2">
+															<img src="https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_1280.jpg"
+																alt="image">
+															<div class="main-tag">
+																<span>#MINIMALIST</span>
+															</div>
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-3" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-3">
+															<img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
 												</div>
 											</div>
-										</a>
-										<a class="pp-image-content image-wrapper-3" href="/property/1/1"
-											target="_blank">
-											<div class="image-sizing-3">
-												<img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
-													alt="image">
+											<div class="pp-detail">
+												<div class="row">
+													<div class="col-md-10 col-12">
+														<div class="pp-highlight">
+															<div class="pp-tags">
+																<span id="tag-left-1" class="card-tag" data-id="1"
+																	data-type="coliving" data-active="1"
+																	data-img="/img/coliving-icon.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Co Living</span>
+															</div>
+															<h4 class="pp-title">
+																<a href="/property/1/1" target="_blank">
+																	Amazing City Space - Cipete Utara
+																</a>
+															</h4>
+															<p class="pp-location">Menteng, Jakarta Pusat</p>
+															<p class="pp-price" data-type="coliving">From <strong><span
+																		class="starting-price">Rp. 5,260,000 / Room /
+																		Month</span></strong></p>
 
+														</div>
+													</div>
+													<div
+														class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
+														<button
+															class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
+															data-id="1">
+															<i class="far fa-heart icon icon-small"></i>
+														</button>
+													</div>
+												</div>
+												<hr class="pp-divider">
+												<div class="row">
+													<div class="col-md-9 col-12">
+														<div class="pp-spec d-flex flex-row flex-wrap">
+															<span class="pp-rates">
+																<span class="pp-stars">4.5</span>
+																<i class="fas fa-star text-color-orange"></i>
+																<span
+																	class="pp-raters color-light-brown pl-2">(35)</span>
+															</span>
+
+															<span
+																class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img src="/img/ic_size.png" alt="icon landsize">
+																<span><span
+																		class="pp-size">169.4</span>m<sup>2</sup></span>
+															</span>
+															<span
+																class="pp-room d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img id="icon-1" src="/img/coliving-icon.png"
+																	alt="icon room">
+																<span id="room-1"><span
+																		class="font-weight-bold">2</span>/<span>8</span></span>
+															</span>
+														</div>
+													</div>
+													<div class="col-md-3 text-right">
+														<a href="/property/1/1"
+															class="pp-goto-detail outline-none font-weight-bold"
+															target="_blank">Details</a>
+													</div>
+												</div>
 											</div>
-										</a>
+										</div>
 									</div>
 								</div>
-								<div class="pp-detail">
-									<div class="row">
-										<div class="col-md-10 col-12">
-											<div class="pp-highlight">
-												<div class="pp-tags">
-													<span id="tag-left-1" class="card-tag" data-id="1"
-														data-type="coliving" data-active="1"
-														data-img="../img/coliving-icon.png" data-room="1" data-price="1"
-														data-building_size="1" data-unit_size="1">Co Living</span>
-												</div>
-												<h4 class="pp-title">
-													<a href="/property/1/1" target="_blank">
-														Amazing City Space - Cipete Utara
-													</a>
-												</h4>
-												<p class="pp-location">Menteng, Jakarta Pusat</p>
-												<p class="pp-price" data-type="coliving">From <strong><span
-															class="starting-price">Rp. 5,260,000 / Room /
-															Month</span></strong></p>
+								<div class="owl-item cloned" style="width: 340px; margin-right: 240px;">
+									<div class="col-12 property-wrapper">
+										<div class="property-item">
+											<div id="" class="pp-images position-relative">
+												<div id="" class="pp-images position-relative">
+													<a class="pp-image-content image-wrapper-1" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-1">
+															<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940169_1280.jpg"
+																alt="image">
 
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-2" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-2">
+															<img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_1280.jpg"
+																alt="image">
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-3" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-3">
+															<img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+												</div>
 											</div>
-										</div>
-										<div
-											class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
-											<button
-												class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
-												data-id="1">
-												<i class="far fa-heart icon icon-small"></i>
-											</button>
+											<div class="pp-detail">
+												<div class="row">
+													<div class="col-md-10 col-12">
+														<div class="pp-highlight">
+															<div class="pp-tags">
+																<span id="tag-right-1" class="card-tag" data-id="1"
+																	data-type="entire" data-active="0"
+																	data-img="/img/ic_bedroom.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Entire Apartment</span>
+																<span id="tag-left-1" class="card-tag card-tag-outline"
+																	data-id="1" data-type="coliving" data-active="1"
+																	data-img="/img/coliving-icon.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Co Living</span>
+															</div>
+															<h4 class="pp-title">
+																<a href="/property/1/1" target="_blank">
+																	1Park Residence 2BR Tower B
+																</a>
+															</h4>
+															<p class="pp-location">Kebayoran Baru, Jakarta Selatan</p>
+															<p class="pp-price" data-type="coliving">From <strong><span
+																		class="starting-price">Rp. 32,800,000 /
+																		Month</span></strong>
+															</p>
+
+														</div>
+													</div>
+													<div
+														class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
+														<button
+															class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
+															data-id="1">
+															<i class="far fa-heart icon icon-small"></i>
+														</button>
+													</div>
+												</div>
+												<hr class="pp-divider">
+												<div class="row">
+													<div class="col-md-9 col-12">
+														<div class="pp-spec d-flex flex-row flex-wrap">
+															<span class="pp-rates">
+																<span class="pp-stars">4.5</span>
+																<i class="fas fa-star text-color-orange"></i>
+																<span
+																	class="pp-raters color-light-brown pl-2">(35)</span>
+															</span>
+
+															<span
+																class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img src="/img/ic_size.png" alt="icon landsize">
+																<span><span
+																		class="pp-size">169.4</span>m<sup>2</sup></span>
+															</span>
+															<span
+																class="pp-bed d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img id="icon-1" src="/img/ic_bedroom.png"
+																	alt="icon bed">
+																<span id="room-1"><span>3</span></span>
+															</span>
+														</div>
+													</div>
+													<div class="col-md-3 text-right">
+														<a href="/property/1/1"
+															class="pp-goto-detail outline-none font-weight-bold"
+															target="_blank">Details</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<hr class="pp-divider">
-									<div class="row">
-										<div class="col-md-9 col-12">
-											<div class="pp-spec d-flex flex-row flex-wrap">
-												<span class="pp-rates">
-													<span class="pp-stars">4.5</span>
-													<i class="fas fa-star text-color-orange"></i>
-													<span class="pp-raters color-light-brown pl-2">(35)</span>
-												</span>
+								</div>
+								<div class="owl-item active" style="width: 340px; margin-right: 240px;">
+									<div class="col-12 property-wrapper">
+										<div class="property-item">
+											<div id="" class="pp-images position-relative">
+												<div id="" class="pp-images position-relative">
+													<a class="pp-image-content image-wrapper-1" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-1">
+															<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg"
+																alt="image">
 
-												<span
-													class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
-													<img src="/img/ic_size.png" alt="icon landsize">
-													<span><span class="pp-size">169.4</span>m<sup>2</sup></span>
-												</span>
-												<span
-													class="pp-room d-flex flex-row flex-wrap justify-content-start align-items-start">
-													<img id="icon-1" src="/img/coliving-icon.png" alt="icon room">
-													<span id="room-1"><span
-															class="font-weight-bold">2</span>/<span>8</span></span>
-												</span>
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-2" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-2">
+															<img src="https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_1280.jpg"
+																alt="image">
+															<div class="main-tag">
+																<span>#MINIMALIST</span>
+															</div>
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-3" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-3">
+															<img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="pp-detail">
+												<div class="row">
+													<div class="col-md-10 col-12">
+														<div class="pp-highlight">
+															<div class="pp-tags">
+																<span id="tag-left-1" class="card-tag" data-id="1"
+																	data-type="coliving" data-active="1"
+																	data-img="/img/coliving-icon.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Co Living</span>
+															</div>
+															<h4 class="pp-title">
+																<a href="/property/1/1" target="_blank">
+																	Amazing City Space - Cipete Utara
+																</a>
+															</h4>
+															<p class="pp-location">Menteng, Jakarta Pusat</p>
+															<p class="pp-price" data-type="coliving">From <strong><span
+																		class="starting-price">Rp. 5,260,000 / Room /
+																		Month</span></strong></p>
+
+														</div>
+													</div>
+													<div
+														class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
+														<button
+															class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
+															data-id="1">
+															<i class="far fa-heart icon icon-small"></i>
+														</button>
+													</div>
+												</div>
+												<hr class="pp-divider">
+												<div class="row">
+													<div class="col-md-9 col-12">
+														<div class="pp-spec d-flex flex-row flex-wrap">
+															<span class="pp-rates">
+																<span class="pp-stars">4.5</span>
+																<i class="fas fa-star text-color-orange"></i>
+																<span
+																	class="pp-raters color-light-brown pl-2">(35)</span>
+															</span>
+
+															<span
+																class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img src="/img/ic_size.png" alt="icon landsize">
+																<span><span
+																		class="pp-size">169.4</span>m<sup>2</sup></span>
+															</span>
+															<span
+																class="pp-room d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img id="icon-1" src="/img/coliving-icon.png"
+																	alt="icon room">
+																<span id="room-1"><span
+																		class="font-weight-bold">2</span>/<span>8</span></span>
+															</span>
+														</div>
+													</div>
+													<div class="col-md-3 text-right">
+														<a href="/property/1/1"
+															class="pp-goto-detail outline-none font-weight-bold"
+															target="_blank">Details</a>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="col-md-3 text-right">
-											<a href="/property/1/1" class="pp-goto-detail outline-none font-weight-bold"
-												target="_blank">Details</a>
+									</div>
+								</div>
+								<div class="owl-item active" style="width: 340px; margin-right: 240px;">
+									<div class="col-12 property-wrapper">
+										<div class="property-item">
+											<div id="" class="pp-images position-relative">
+												<div id="" class="pp-images position-relative">
+													<a class="pp-image-content image-wrapper-1" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-1">
+															<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940169_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-2" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-2">
+															<img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_1280.jpg"
+																alt="image">
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-3" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-3">
+															<img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="pp-detail">
+												<div class="row">
+													<div class="col-md-10 col-12">
+														<div class="pp-highlight">
+															<div class="pp-tags">
+																<span id="tag-right-1" class="card-tag" data-id="1"
+																	data-type="entire" data-active="0"
+																	data-img="/img/ic_bedroom.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Entire Apartment</span>
+																<span id="tag-left-1" class="card-tag card-tag-outline"
+																	data-id="1" data-type="coliving" data-active="1"
+																	data-img="/img/coliving-icon.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Co Living</span>
+															</div>
+															<h4 class="pp-title">
+																<a href="/property/1/1" target="_blank">
+																	1Park Residence 2BR Tower B
+																</a>
+															</h4>
+															<p class="pp-location">Kebayoran Baru, Jakarta Selatan</p>
+															<p class="pp-price" data-type="coliving">From <strong><span
+																		class="starting-price">Rp. 32,800,000 /
+																		Month</span></strong>
+															</p>
+
+														</div>
+													</div>
+													<div
+														class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
+														<button
+															class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
+															data-id="1">
+															<i class="far fa-heart icon icon-small"></i>
+														</button>
+													</div>
+												</div>
+												<hr class="pp-divider">
+												<div class="row">
+													<div class="col-md-9 col-12">
+														<div class="pp-spec d-flex flex-row flex-wrap">
+															<span class="pp-rates">
+																<span class="pp-stars">4.5</span>
+																<i class="fas fa-star text-color-orange"></i>
+																<span
+																	class="pp-raters color-light-brown pl-2">(35)</span>
+															</span>
+
+															<span
+																class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img src="/img/ic_size.png" alt="icon landsize">
+																<span><span
+																		class="pp-size">169.4</span>m<sup>2</sup></span>
+															</span>
+															<span
+																class="pp-bed d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img id="icon-1" src="/img/ic_bedroom.png"
+																	alt="icon bed">
+																<span id="room-1"><span>3</span></span>
+															</span>
+														</div>
+													</div>
+													<div class="col-md-3 text-right">
+														<a href="/property/1/1"
+															class="pp-goto-detail outline-none font-weight-bold"
+															target="_blank">Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item cloned" style="width: 340px; margin-right: 240px;">
+									<div class="col-12 property-wrapper">
+										<div class="property-item">
+											<div id="" class="pp-images position-relative">
+												<div id="" class="pp-images position-relative">
+													<a class="pp-image-content image-wrapper-1" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-1">
+															<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-2" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-2">
+															<img src="https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_1280.jpg"
+																alt="image">
+															<div class="main-tag">
+																<span>#MINIMALIST</span>
+															</div>
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-3" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-3">
+															<img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="pp-detail">
+												<div class="row">
+													<div class="col-md-10 col-12">
+														<div class="pp-highlight">
+															<div class="pp-tags">
+																<span id="tag-left-1" class="card-tag" data-id="1"
+																	data-type="coliving" data-active="1"
+																	data-img="/img/coliving-icon.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Co Living</span>
+															</div>
+															<h4 class="pp-title">
+																<a href="/property/1/1" target="_blank">
+																	Amazing City Space - Cipete Utara
+																</a>
+															</h4>
+															<p class="pp-location">Menteng, Jakarta Pusat</p>
+															<p class="pp-price" data-type="coliving">From <strong><span
+																		class="starting-price">Rp. 5,260,000 / Room /
+																		Month</span></strong></p>
+
+														</div>
+													</div>
+													<div
+														class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
+														<button
+															class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
+															data-id="1">
+															<i class="far fa-heart icon icon-small"></i>
+														</button>
+													</div>
+												</div>
+												<hr class="pp-divider">
+												<div class="row">
+													<div class="col-md-9 col-12">
+														<div class="pp-spec d-flex flex-row flex-wrap">
+															<span class="pp-rates">
+																<span class="pp-stars">4.5</span>
+																<i class="fas fa-star text-color-orange"></i>
+																<span
+																	class="pp-raters color-light-brown pl-2">(35)</span>
+															</span>
+
+															<span
+																class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img src="/img/ic_size.png" alt="icon landsize">
+																<span><span
+																		class="pp-size">169.4</span>m<sup>2</sup></span>
+															</span>
+															<span
+																class="pp-room d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img id="icon-1" src="/img/coliving-icon.png"
+																	alt="icon room">
+																<span id="room-1"><span
+																		class="font-weight-bold">2</span>/<span>8</span></span>
+															</span>
+														</div>
+													</div>
+													<div class="col-md-3 text-right">
+														<a href="/property/1/1"
+															class="pp-goto-detail outline-none font-weight-bold"
+															target="_blank">Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item cloned" style="width: 340px; margin-right: 240px;">
+									<div class="col-12 property-wrapper">
+										<div class="property-item">
+											<div id="" class="pp-images position-relative">
+												<div id="" class="pp-images position-relative">
+													<a class="pp-image-content image-wrapper-1" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-1">
+															<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940169_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-2" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-2">
+															<img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_1280.jpg"
+																alt="image">
+														</div>
+													</a>
+													<a class="pp-image-content image-wrapper-3" href="/property/1/1"
+														target="_blank">
+														<div class="image-sizing-3">
+															<img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg"
+																alt="image">
+
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="pp-detail">
+												<div class="row">
+													<div class="col-md-10 col-12">
+														<div class="pp-highlight">
+															<div class="pp-tags">
+																<span id="tag-right-1" class="card-tag" data-id="1"
+																	data-type="entire" data-active="0"
+																	data-img="/img/ic_bedroom.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Entire Apartment</span>
+																<span id="tag-left-1" class="card-tag card-tag-outline"
+																	data-id="1" data-type="coliving" data-active="1"
+																	data-img="/img/coliving-icon.png" data-room="1"
+																	data-price="1" data-building_size="1"
+																	data-unit_size="1">Co Living</span>
+															</div>
+															<h4 class="pp-title">
+																<a href="/property/1/1" target="_blank">
+																	1Park Residence 2BR Tower B
+																</a>
+															</h4>
+															<p class="pp-location">Kebayoran Baru, Jakarta Selatan</p>
+															<p class="pp-price" data-type="coliving">From <strong><span
+																		class="starting-price">Rp. 32,800,000 /
+																		Month</span></strong>
+															</p>
+
+														</div>
+													</div>
+													<div
+														class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
+														<button
+															class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
+															data-id="1">
+															<i class="far fa-heart icon icon-small"></i>
+														</button>
+													</div>
+												</div>
+												<hr class="pp-divider">
+												<div class="row">
+													<div class="col-md-9 col-12">
+														<div class="pp-spec d-flex flex-row flex-wrap">
+															<span class="pp-rates">
+																<span class="pp-stars">4.5</span>
+																<i class="fas fa-star text-color-orange"></i>
+																<span
+																	class="pp-raters color-light-brown pl-2">(35)</span>
+															</span>
+
+															<span
+																class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img src="/img/ic_size.png" alt="icon landsize">
+																<span><span
+																		class="pp-size">169.4</span>m<sup>2</sup></span>
+															</span>
+															<span
+																class="pp-bed d-flex flex-row flex-wrap justify-content-start align-items-start">
+																<img id="icon-1" src="/img/ic_bedroom.png"
+																	alt="icon bed">
+																<span id="room-1"><span>3</span></span>
+															</span>
+														</div>
+													</div>
+													<div class="col-md-3 text-right">
+														<a href="/property/1/1"
+															class="pp-goto-detail outline-none font-weight-bold"
+															target="_blank">Details</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
-						<div class="col-12 property-wrapper">
-							<div class="property-item">
-								<div id="" class="pp-images position-relative">
-									<div id="" class="pp-images position-relative">
-										<a class="pp-image-content image-wrapper-1" href="/property/1/1"
-											target="_blank">
-											<div class="image-sizing-1">
-												<img src="https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940169_1280.jpg"
-													alt="image">
-
-											</div>
-										</a>
-										<a class="pp-image-content image-wrapper-2" href="/property/1/1"
-											target="_blank">
-											<div class="image-sizing-2">
-												<img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_1280.jpg"
-													alt="image">
-											</div>
-										</a>
-										<a class="pp-image-content image-wrapper-3" href="/property/1/1"
-											target="_blank">
-											<div class="image-sizing-3">
-												<img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg"
-													alt="image">
-
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="pp-detail">
-									<div class="row">
-										<div class="col-md-10 col-12">
-											<div class="pp-highlight">
-												<div class="pp-tags">
-													<span id="tag-right-1" class="card-tag" data-id="1"
-														data-type="entire" data-active="0"
-														data-img="../img/ic_bedroom.png" data-room="1" data-price="1"
-														data-building_size="1" data-unit_size="1">Entire
-														Apartment</span>
-													<span id="tag-left-1" class="card-tag card-tag-outline" data-id="1"
-														data-type="coliving" data-active="1"
-														data-img="../img/coliving-icon.png" data-room="1" data-price="1"
-														data-building_size="1" data-unit_size="1">Co Living</span>
-												</div>
-												<h4 class="pp-title">
-													<a href="/property/1/1" target="_blank">
-														1Park Residence 2BR Tower B
-													</a>
-												</h4>
-												<p class="pp-location">Kebayoran Baru, Jakarta Selatan</p>
-												<p class="pp-price" data-type="coliving">From <strong><span
-															class="starting-price">Rp. 32,800,000 /
-															Month</span></strong>
-												</p>
-
-											</div>
-										</div>
-										<div
-											class="col-md-2 col-12 d-flex flex-md-column flex-row flex-wrap align-items-md-end align-items-center justify-content-md-end justify-content-between mt-md-0 mt-10">
-											<button
-												class="btn btn-icon-small btn-favorite background-white mb-auto mt-md-40"
-												data-id="1">
-												<i class="far fa-heart icon icon-small"></i>
-											</button>
-										</div>
-									</div>
-									<hr class="pp-divider">
-									<div class="row">
-										<div class="col-md-9 col-12">
-											<div class="pp-spec d-flex flex-row flex-wrap">
-												<span class="pp-rates">
-													<span class="pp-stars">4.5</span>
-													<i class="fas fa-star text-color-orange"></i>
-													<span class="pp-raters color-light-brown pl-2">(35)</span>
-												</span>
-
-												<span
-													class="pp-landsize d-flex flex-row flex-wrap justify-content-start align-items-start">
-													<img src="/img/ic_size.png" alt="icon landsize">
-													<span><span class="pp-size">169.4</span>m<sup>2</sup></span>
-												</span>
-												<span
-													class="pp-bed d-flex flex-row flex-wrap justify-content-start align-items-start">
-													<img id="icon-1" src="/img/ic_bedroom.png" alt="icon bed">
-													<span id="room-1"><span>3</span></span>
-												</span>
-											</div>
-										</div>
-										<div class="col-md-3 text-right">
-											<a href="/property/1/1" class="pp-goto-detail outline-none font-weight-bold"
-												target="_blank">Details</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><img
+									src="/img/ic_left_arrow.png" class="icon-arrow-left"
+									alt="icon arrow left"></button><button type="button" role="presentation"
+								class="owl-next"><img src="/img/ic_right_arrow.png" class="icon-arrow-right"
+									alt="icon arrow right"></button></div>
+						<div class="owl-dots disabled"><button role="button"
+								class="owl-dot active"><span></span></button></div>
 					</div>
 				</div>
 			</div>
@@ -357,8 +841,7 @@
 				<div class="col-xl-2-4 col-md-6 col-12">
 					<div class="we-provide-item mb-lg-0 mb-40">
 						<div class="provide-image mb-15">
-							<img src="http://localhost:8000/img/homepage/main-monthly-payment.png"
-								alt="Monthly payments">
+							<img src="/img/homepage/main-monthly-payment.png" alt="Monthly payments">
 						</div>
 						<div class="provide-desc text-center">
 							<h5 class="font-size-16">
@@ -373,7 +856,7 @@
 				<div class="col-xl-2-4 col-md-6 col-12">
 					<div class="we-provide-item mb-lg-0 mb-40">
 						<div class="provide-image mb-15">
-							<img src="http://localhost:8000/img/homepage/main-flexibility.png" alt="Flexibility">
+							<img src="/img/homepage/main-flexibility.png" alt="Flexibility">
 						</div>
 						<div class="provide-desc text-center">
 							<h5 class="font-size-16">Flexibility
@@ -389,7 +872,7 @@
 				<div class="col-xl-2-4 col-md-6 col-12">
 					<div class="we-provide-item mb-lg-0 mb-40">
 						<div class="provide-image mb-15">
-							<img src="http://localhost:8000/img/homepage/main-location.png" alt="Preferred locations">
+							<img src="/img/homepage/main-location.png" alt="Preferred locations">
 						</div>
 						<div class="provide-desc text-center">
 							<h5 class="font-size-16">
@@ -406,8 +889,7 @@
 				<div class="col-xl-2-4 col-md-6 col-12">
 					<div class="we-provide-item mb-lg-0 mb-40">
 						<div class="provide-image mb-15">
-							<img src="http://localhost:8000/img/homepage/main-compatibility.png"
-								alt="Co-living compatibility">
+							<img src="/img/homepage/main-compatibility.png" alt="Co-living compatibility">
 						</div>
 						<div class="provide-desc text-center">
 							<h5 class="font-size-16">
@@ -423,7 +905,7 @@
 				<div class="col-xl-2-4 col-md-6 col-12">
 					<div class="we-provide-item mb-lg-0 mb-40">
 						<div class="provide-image mb-15">
-							<img src="http://localhost:8000/img/homepage/main-piece-of-mind.png" alt="Peace of mind">
+							<img src="/img/homepage/main-piece-of-mind.png" alt="Peace of mind">
 						</div>
 						<div class="provide-desc text-center">
 							<h5 class="font-size-16">Peace of mind
@@ -508,7 +990,7 @@
 								<div class="row">
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi1.png" />
+											<img src="/img/renter_illustrasi1.png" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -524,12 +1006,12 @@
 										<div class="tab-footer-icon text-center">
 											<a href="#" data-toggle="modal"
 												data-target="#modalExploreLiveVirtualTour"><img
-													src="http://localhost:8000/img/ic_360vr_grey.svg" class="icon"></a>
+													src="/img/ic_360vr_grey.svg" class="icon"></a>
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi2.png" />
+											<img src="/img/renter_illustrasi2.png" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -544,13 +1026,12 @@
 										<div class="tab-footer-icon text-center">
 											<a href="#" data-toggle="modal"
 												data-target="#modalExploreLiveVirtualTour"><img
-													src="http://localhost:8000/img/ic_view_virtual_field_grey.svg"
-													class="icon"></a>
+													src="/img/ic_view_virtual_field_grey.svg" class="icon"></a>
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi3.png" />
+											<img src="/img/renter_illustrasi3.png" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -562,7 +1043,7 @@
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi4.png" />
+											<img src="/img/renter_illustrasi4.png" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -580,7 +1061,7 @@
 								<div class="row mb-15">
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi1.png" />
+											<img src="/img/renter_illustrasi1.png" />
 										</div>
 
 										<p
@@ -597,12 +1078,12 @@
 										<div class="tab-footer-icon text-center">
 											<a href="#" data-toggle="modal"
 												data-target="#modalExploreLiveVirtualTour"><img
-													src="http://localhost:8000/img/ic_360vr_grey.svg" class="icon"></a>
+													src="/img/ic_360vr_grey.svg" class="icon"></a>
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/connect.svg" />
+											<img src="/img/connect.svg" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -618,13 +1099,12 @@
 										<div class="tab-footer-icon text-center">
 											<a href="#" data-toggle="modal"
 												data-target="#modalExploreLiveVirtualTour"><img
-													src="http://localhost:8000/img/ic_view_virtual_field_grey.svg"
-													class="icon"></a>
+													src="/img/ic_view_virtual_field_grey.svg" class="icon"></a>
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi3.png" />
+											<img src="/img/renter_illustrasi3.png" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -636,7 +1116,7 @@
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/renter_illustrasi4.png" />
+											<img src="/img/renter_illustrasi4.png" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -663,7 +1143,7 @@
 								<div class="row">
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/owner1.svg" />
+											<img src="/img/owner1.svg" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -675,7 +1155,7 @@
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/owner2.svg" />
+											<img src="/img/owner2.svg" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -688,7 +1168,7 @@
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/owner3.svg" />
+											<img src="/img/owner3.svg" />
 										</div>
 
 										<p
@@ -700,7 +1180,7 @@
 									</div>
 									<div class="col-lg-3 col-md-6 col-12">
 										<div class="mb-15 image-card">
-											<img src="http://localhost:8000/img/owner4.svg" />
+											<img src="/img/owner4.svg" />
 										</div>
 										<p
 											class="mb-15 text-center text-color-dark font-size-20 title-card font-weight-bold">
@@ -790,7 +1270,7 @@
 		<div class="container">
 			<div class="row row-property-lister">
 				<div class="col-md-6 col-12 d-flex flex-column flex-wrap justify-content-start align-items-center">
-					<img class="img-fluid" src="http://localhost:8000/img/sofa-asset.png" />
+					<img class="img-fluid" src="/img/sofa-asset.png" />
 				</div>
 				<div class="col-md-6 col-12 d-flex flex-column flex-wrap justify-content-center align-items-center">
 					<div class="property-lister text-center ml-xl-15">
@@ -799,14 +1279,14 @@
 						<h3 class="font-size-32 font-weight-bold color-white mb-40">
 							Go for effortless leasing as a</h3>
 						<div class="btn-list-group">
-							<a class="btn btn-primary btn-wide" href="http://localhost:8000/property-lister/homeowner"
+							<a class="btn btn-primary btn-wide" href="/property-lister/homeowner"
 								role="button">Homeowner</a>
-							<a class="btn btn-primary btn-wide" href="http://localhost:8000/property-lister/agent"
-								role="button">Property Agent</a>
-							<a class="btn btn-primary btn-wide"
-								href="http://localhost:8000/property-lister/building-management" role="button">Building
+							<a class="btn btn-primary btn-wide" href="/property-lister/agent" role="button">Property
+								Agent</a>
+							<a class="btn btn-primary btn-wide" href="/property-lister/building-management"
+								role="button">Building
 								Management</a>
-							<a class="btn btn-primary btn-wide" href="http://localhost:8000/property-lister/housemate"
+							<a class="btn btn-primary btn-wide" href="/property-lister/housemate"
 								role="button">Housemate</a>
 						</div>
 					</div>
@@ -827,11 +1307,11 @@
 						<h3 class="font-size-22 font-weight-bold text-center mb-20">Start earning income from real
 							estate
 							deals on your free time</h3>
-						<a class="btn btn-primary btn-wide" href="http://localhost:8000/join/agent">Become a showing
+						<a class="btn btn-primary btn-wide" href="/join/agent">Become a showing
 							agent</a>
 						<h3 class="font-size-22 font-weight-bold text-center mt-40 mb-20">Increase efficiency by placing
 							your fellow workers near your office or project locations</h3>
-						<a class="btn btn-primary btn-wide" href="http://localhost:8000/join/company-client">Start
+						<a class="btn btn-primary btn-wide" href="/join/company-client">Start
 							placing my
 							company staff</a>
 					</div>
@@ -857,69 +1337,178 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<div class="owl-carousel owl-sewagi-testimonials">
+					<div class="owl-carousel owl-sewagi-testimonials owl-loaded owl-drag">
 						<!-- start: testi item -->
-						<div class="col-12">
-							<div class="testimonial-item">
-								<div class="testimonial-icon text-center">
-									<i class="fas fa-quote-left"></i>
+
+						<!-- end: testi item -->
+						<!-- start: testi item -->
+
+						<!-- end: testi item -->
+						<!-- start: testi item -->
+
+						<!-- end: testi item -->
+						<div class="owl-stage-outer">
+							<div class="owl-stage"
+								style="transform: translate3d(-2220px, 0px, 0px); transition: 0.25s; width: 7770px;">
+								<div class="owl-item cloned" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="testimonial-text text-center">
-									<p class="font-size-20 mb-0">Sewagi allows me to handle my property from anywhere.
-										No
-										more spending time in traffic just to sign lease contract.</p>
+								<div class="owl-item cloned" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="testimonial-image text-center">
-									<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
-									<span class="testimonial-name d-block mb-10">George Norton</span>
-									<span class="testimonial-role d-block">Homeowner</span>
+								<div class="owl-item active" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item cloned" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item cloned" style="width: 1110px;">
+									<div class="col-12">
+										<div class="testimonial-item">
+											<div class="testimonial-icon text-center">
+												<i class="fas fa-quote-left"></i>
+											</div>
+											<div class="testimonial-text text-center">
+												<p class="font-size-20 mb-0">Sewagi allows me to handle my property from
+													anywhere. No more spending time in traffic just to sign lease
+													contract.
+												</p>
+											</div>
+											<div class="testimonial-image text-center">
+												<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
+												<span class="testimonial-name d-block mb-10">George Norton</span>
+												<span class="testimonial-role d-block">Homeowner</span>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- end: testi item -->
-						<!-- start: testi item -->
-						<div class="col-12">
-							<div class="testimonial-item">
-								<div class="testimonial-icon text-center">
-									<i class="fas fa-quote-left"></i>
-								</div>
-								<div class="testimonial-text text-center">
-									<p class="font-size-20 mb-0">Sewagi allows me to handle my property from anywhere.
-										No
-										more spending time in traffic just to sign lease contract.</p>
-								</div>
-								<div class="testimonial-image text-center">
-									<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
-									<span class="testimonial-name d-block mb-10">George Norton</span>
-									<span class="testimonial-role d-block">Homeowner</span>
-								</div>
-							</div>
+						<div class="owl-nav">
+							<button type="button" role="presentation" class="owl-prev">
+								<font-awesome-icon :icon="['fas', 'left-long']" size="2xl" style="color: #ffffff;" />
+							</button>
+							<button type="button" role="presentation" class="owl-next">
+								<font-awesome-icon :icon="['fas', 'right-long']" size="2xl" style="color: #ffffff;" />
+							</button>
 						</div>
-						<!-- end: testi item -->
-						<!-- start: testi item -->
-						<div class="col-12">
-							<div class="testimonial-item">
-								<div class="testimonial-icon text-center">
-									<i class="fas fa-quote-left"></i>
-								</div>
-								<div class="testimonial-text text-center">
-									<p class="font-size-20 mb-0">Sewagi allows me to handle my property from anywhere.
-										No
-										more spending time in traffic just to sign lease contract.</p>
-								</div>
-								<div class="testimonial-image text-center">
-									<img class="rounded-circle" src="/img/testi.jpg" alt="testimonial User">
-									<span class="testimonial-name d-block mb-10">George Norton</span>
-									<span class="testimonial-role d-block">Homeowner</span>
-								</div>
-							</div>
-						</div>
-						<!-- end: testi item -->
+						<div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button
+								role="button" class="owl-dot"><span></span></button><button role="button"
+								class="owl-dot"><span></span></button></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<div class="section-testimonial-separator row">
 		<div class="col-md-8 offset-md-2" style="padding: 0;">
 			<div style="height: 1px;width: 103%;background-color: #ddd;margin-left: -7.5px;margin-right: -7.5px;"></div>
@@ -999,10 +1588,9 @@
 				<div class="col-md-6 col-12 d-flex align-items-center">
 					<ul class="list-inline link-item footer-bottom-list mb-md-0">
 						<li class="list-inline-item mr-50">
-							<i class="fas fa-globe-asia color-white font-size-22 mr-10"></i> <a
-								href="http://localhost:8000/set-lang/id"
+							<i class="fas fa-globe-asia color-white font-size-22 mr-10"></i> <a href="/set-lang/id"
 								class="color-white font-weight-light mr-15">Id</a>
-							<a href="http://localhost:8000/set-lang/en" class="color-white font-weight-light">En</a>
+							<a href="/set-lang/en" class="color-white font-weight-light">En</a>
 						</li>
 						<li class="list-inline-item">
 							<i class="fas fa-coins color-white font-size-22 mr-10"></i> <a href="#"
@@ -1047,8 +1635,8 @@
 							</ul>
 						</div>
 						<div class="col-6">
-							<img class="sewagi-copy" src="http://localhost:8000/img/sewagi-logo-only.png"
-								alt="Sewagi Brand"> Sewagi &copy; 2019
+							<img class="sewagi-copy" src="/img/sewagi-logo-only.png" alt="Sewagi Brand"> Sewagi &copy;
+							2019
 							<!-- <script>
                 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
             </script> -->
